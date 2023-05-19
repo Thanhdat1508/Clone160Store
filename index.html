@@ -16,15 +16,24 @@
 </head>
 <style>
     .demo {
+
         background-color: aqua;
     }
 
+
+
     .demo1 {
+        width: 50px;
+        height: 50px;
         background-color: orangered;
     }
 
     .demo2 {
         background-color: rebeccapurple;
+    }
+
+    .main-store {
+        display: grid;
     }
 </style>
 
@@ -40,70 +49,127 @@
             </div>
             <div class="main-header">
                 <div class="grid wide">
-                    <div class="dfx row ">
-                        <div class="main-logo col l-2 pd-r">
+                    <div class="dfx row no-gutters">
+                        <div class="main-logo col l-2 pd-r t-2 m-2">
                             <img src="image/logo.jpg" class="logo-item" alt="Logo">
                         </div>
 
-                        <div class="main-search col l-6">
+                        <div class="main-search  l-6 t-6 m-6">
                             <form>
                                 <input type="text" class="input-search"
                                     placeholder="Nhập tên sản phẩm bạn muốn tìm kiếm...">
                                 <button><i class="bi bi-search icon-item"></i></button>
                                 <div class="search-result">
-                                    xin chào
-                                </div>
-                            </form>
-                        </div>
-
-                        <div class="main-utilities col l-4 ">
-                            <div class="row no-gutters ">
-                                <div class="map-store col l-4 ">
-                                    <div class="row no-gutters">
-                                        <div class="icon-store col"><i class="bi bi-geo-fill icon-item"></i></div>
-                                        <div class="text-store col l-8">
-                                            <p> Hệ thống </p>
-                                            <p class="text">cửa hàng <span> <i
-                                                        class="bi bi-chevron-down icon-item"></i></span> </p>
+                                    <div class="content-result">
+                                        <h2>kết quản tìm kiếm</h2>
+                                        <div class="number-product">
+                                            <strong>sản phẩm</strong>
+                                            <p>Xem tất cả 177 sản phẩm</p>
                                         </div>
-                                        <div class="location-store">
-                                            <div class="location-list">
-                                                <div class="title">
-                                                    <p>tìm của hàng gần bạn</p>
+                                        <div class="content-search ">
+                                            <div class="content-item df-n">
+                                                <div class="img-search">
+                                                    <img src="image/vida.jpg" alt="ví da" srcset="">
                                                 </div>
-                                                <div class="address">
-                                                    <div class="row no-gutters dfj">
-                                                        <div class="select-item col l-6">
-                                                            <select name="" id="" >
-                                                                <option value="">Chọn tỉnh/thành phố</option>
-                                                            </select>
-                                                        </div>
-                                                      
-                                                        <div class="select-item col l-6">
-                                                            <select name="" id="" >
-                                                                <option value="">Chọn tỉnh/thành phố</option>
-                                                            </select>
-                                                        </div>
-                                                       
-                                                   
+                                                <div class="">
+                                                    <div class="name-search">
+                                                        <p>Ví da</p>
+                                                    </div>
+
+                                                    <div class="price-search">
+                                                        2000000 <span>đ</span>
                                                     </div>
 
                                                 </div>
                                             </div>
-                                        </div>
+                                            <div class="content-item df-n">
+                                                <div class="img-search"><a href="http://"> <img src="image/vida.jpg"
+                                                            alt="ví da" srcset=""></a>
 
+                                                </div>
+                                                <div class="">
+                                                    <div class="name-search">
+                                                        <a href="">Ví da</a>
+                                                    </div>
+
+                                                    <div class="price-search">
+                                                        2000000 <span>đ</span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
                                     </div>
+
+
                                 </div>
-                                <div class="map-store col l-4 demo1">1</div>
-                                <div class="map-store col l-4 demo2">1</div>
-                            </div>
+                            </form>
                         </div>
 
-                    </div>
-                    <div class="box"></div>
-                </div>
+                        <div class="main-utilities margin-zero col l-4 t-4 m-4 ">
+                            <div class="row no-gutters dfx ">
+                                <div class="map-store col l-4 t-4 m-4">
+                                    <div class="row no-gutters  ">
+                                        <div class="icon-store col l-3 t-2 m-2"><i class="bi bi-geo-fill icon-item"></i>
+                                        </div>
+                                        <div class="text-store col l-9 t-10">
+                                            <p> Hệ thống </p>
+                                            <p class="text">cửa hàng
+                                                <span>
+                                                    <i class="bi bi-chevron-down icon-item"></i>
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <div class="location-store">
 
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="map-store col l-4 t-4 m-4 ">
+                                    <div class="row no-gutters  ">
+                                        <div class="icon-store col l-3 t-2 m-2"><i class="bi bi-geo-fill icon-item"></i>
+                                        </div>
+                                        <div class="text-store col l-9 t-10 m-10">
+                                            <p> Hệ thống </p>
+                                            <p class="text">cửa hàng
+                                                <span>
+                                                    <i class="bi bi-chevron-down icon-item"></i>
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <div class="location-store">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="cart col l-4 t-4 m-4 ">
+                                    <div class="row no-gutters dfx ">
+                                        <div class="icon-store col l-3 t-2 m-2"><i class="bi bi-cart3 icon-item"></i>
+                                            <span class="number-cart">0</span>
+                                        </div>
+                                        <div class="text-store col l-9 t-10 m-10">
+                                            <p>Giỏ hàng</p>
+
+                                        </div>
+                                        <div class="location-store">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="box"></div>
             </div>
+
+    </div>
 
 
     </div>
