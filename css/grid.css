@@ -31,7 +31,7 @@
   padding-right: 4px;
 }
 
-.row.no-gutters .col{
+.row.no-gutters .col {
   padding-left: 0;
   padding-right: 0;
 }
@@ -547,24 +547,5 @@
 
   .wide .l-o-11 {
     margin-left: 91.66667%;
-  }
-}
-
-/* Pc normal resolution */
-@media (min-width: 1240px) and (max-width: 1439px) {
-  .wide {
-    width: 1200px;
-  }
-
-  .row{
-    padding: 0;
-    margin: 0;
-  }
-}
-
-/* PC hight resolution */
-@media (min-width: 1440px) {
-  .wide {
-    width: 1400px;
   }
 }

@@ -9,7 +9,8 @@
     <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
 
@@ -20,11 +21,8 @@
         background-color: aqua;
     }
 
-
-
     .demo1 {
-        width: 50px;
-        height: 50px;
+
         background-color: orangered;
     }
 
@@ -39,15 +37,15 @@
 
 <body>
     <div class="grid container">
-        <header>
-            <div class="top-header">
-                <div class="top-p">
-                    <marquee behavior="" direction="">
-                        <p>FREESHIP | ĐƠN HÀNG TỪ 500K</p>
-                    </marquee>
-                </div>
+        <div class="top-header">
+            <div class="top-p">
+                <marquee>
+                    <p style="color: #000;">FREESHIP | ĐƠN HÀNG TỪ 500K</p>
+                </marquee>
             </div>
-            <div class="main-header">
+        </div>
+        <header>
+            <div class="main-header ">
                 <div class="grid wide">
                     <div class="dfx row no-gutters">
                         <div class="main-logo col l-2 pd-r t-2 m-2">
@@ -108,11 +106,15 @@
                             </form>
                         </div>
 
-                        <div class="main-utilities margin-zero col l-4 t-4 m-4 ">
-                            <div class="row no-gutters dfx ">
-                                <div class="map-store col l-4 t-4 m-4">
-                                    <div class="row no-gutters  ">
-                                        <div class="icon-store col l-3 t-2 m-2"><i class="bi bi-geo-fill icon-item"></i>
+                        <div class="main-utilities col l-4 t-4 m-4">
+                            <div class="row no-gutters main-items pd__l">
+                                <div class="map-store col l-4 t-4 m-4 animate__backInUp">
+
+                                    <div class="row no-gutters ">
+                                        <div class="icon-store col l-3 t-2 m-2" style="padding-top: 10px;">
+                                            <i class="fa-solid fa-map-location-dot icon-item"
+                                                style="font-size: 20px;"></i>
+
                                         </div>
                                         <div class="text-store col l-9 t-10">
                                             <p> Hệ thống </p>
@@ -122,26 +124,28 @@
                                                 </span>
                                             </p>
                                         </div>
-                                        <div class="location-store">
 
-                                        </div>
                                     </div>
+                                    <!-- <label for="check__map"></label>
+                                    <input type="checkbox" id="check__map"> -->
+                                    <div class="location-store animate__backInUp">
+                                        <div class="icon-dropdown">
+                                            <i class="bi bi-caret-up-fill"></i>
+                                        </div>
 
+                                    </div>
                                 </div>
                                 <div class="map-store col l-4 t-4 m-4 ">
-                                    <div class="row no-gutters  ">
-                                        <div class="icon-store col l-3 t-2 m-2"><i class="bi bi-geo-fill icon-item"></i>
+                                    <div class="row no-gutters dfx ">
+                                        <div class="icon-store col l-3 t-2 m-2">
+
+                                            <i class="bi bi-person icon-item"></i>
                                         </div>
                                         <div class="text-store col l-9 t-10 m-10">
-                                            <p> Hệ thống </p>
-                                            <p class="text">cửa hàng
-                                                <span>
+                                            <p>Đăng nhập</p>
+                                            <p>Đăng ký <span>
                                                     <i class="bi bi-chevron-down icon-item"></i>
-                                                </span>
-                                            </p>
-                                        </div>
-                                        <div class="location-store">
-
+                                                </span></p>
                                         </div>
                                     </div>
 
@@ -149,33 +153,106 @@
                                 <div class="cart col l-4 t-4 m-4 ">
                                     <div class="row no-gutters dfx ">
                                         <div class="icon-store col l-3 t-2 m-2"><i class="bi bi-cart3 icon-item"></i>
+                                            <!-- <i class="fa-solid fa-cart-shopping"></i> -->
                                             <span class="number-cart">0</span>
                                         </div>
                                         <div class="text-store col l-9 t-10 m-10">
                                             <p>Giỏ hàng</p>
 
                                         </div>
-                                        <div class="location-store">
 
-                                        </div>
                                     </div>
 
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="grid nav__content ">
+                <div class="grid wide nav__pc">
+                    <ul class="menu row ">
+                        <li><a href="http://">Hàng mới</a></li>
+                        <li class="b-g-sale"><a href="http://" style="color: #fff;">flashsale</a></li>
+
+                        <li><a href="http://">Sản phẩm <span><i class="fa-solid fa-chevron-down"></i></span></a>
+                            <ul class="sub-menu">
+                                <li><a href="">Aos mới</a></li>
+                                <li><a href="">Aos mới</a></li>
+
+                                <li><a href="">Aos mới</a></li>
+
+                            </ul>
+
+                        </li>
+
+                        <li><a href="http://">Hướng dẫn - chính sách <span><i
+                                        class="fa-solid fa-chevron-down"></i></span>
+                            </a>
+                            <ul class="sub-menu-item">
+                                <li class=><a href="">Kiển tra sản phẩm tại chi nhánh</a></li>
+                                <li class=><a href="">Kiển tra sản phẩm tại chi nhánh</a></li>
+                                <li class=><a href="">Kiển tra sản phẩm tại chi nhánh</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li><a href="http://">Địa chỉ cửa hàng</a></li>
+
+                        <li><a href="http://">Tin tức</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </header>
+        <div class="nav-mobile l-0 t-12 m-12 ">
+            <div class="row no-gutters dfx">
+                <div class="icon-list l-0 t-3 m-3 ">
+                    <i class="fa-solid fa-bars icon-item"></i>
+                </div>
+                <div class="logo-mobile l-0 t-6 m-6 ">
+                    <img src="image/logo.jpg" width="150px" alt="" srcset="">
 
                 </div>
-                <div class="box"></div>
+                <div class="group-icon-nav-mobile col l-0 t-3 m-3 ">
+                    <div class="row no-gutters group-icon">
+                        <div class="search-mobile col l-0 t-6 m-4">
+                            <div class="row no-gutters">
+                                <div class="icon-search">
+                                    <i class="fa-solid fa-magnifying-glass icon-group "></i>
+                                </div>
+                                <div class="name-icon">
+                                    <p>Tìm kiếm</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="account-mobile col l-0 t-0 m-4">
+                            <i class="fa-solid fa-user icon-group"></i>
+                        </div>
+
+
+                        <div class="cart-mobile row col l-0 t-6 m-4">
+                            <div class="row no-gutters">
+                                <div class="icon-cart">
+                                    <i class="fa-solid fa-cart-shopping icon-group"></i>
+                                </div>
+                                <div class="name-icon">
+                                    <p>Giỏ hàng</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+
+
+    </div>
+    </div>
 
     </div>
 
-
-    </div>
-    </header>
-
-    </div>
 </body>
 
 </html>
